@@ -14,27 +14,29 @@ public class EstudoOperadores {
         System.out.println("Divisão: " + divisao);
 
         // Fazendo a divisão do jeito adequado
-        double c = 10.0;
+        int c = 10;
         double d = 15.0;
         double divisao2 = d / c;
-        System.out.println("Divisão entre double: "+ divisao2);
+        // divisão entre double e int => double
+        System.out.println("Divisão entre double: " + divisao2);
 
         // Math
-        double x = Math.pow(2,3); // potencia 2 elevado a 3 = 8
-        double y = Math. sqrt(144); // raiz quadrada de 144 = 12
+        double x = Math.pow(2, 3); // potencia 2 elevado a 3 = 8
+        double y = Math.sqrt(144); // raiz quadrada de 144 = 12
 
         System.out.println(Math.PI);
 
         // Incremento/Decremento
         int valor = 5;
-        valor++; // valor = valor +1
+        ++valor;
+        --valor;
+        valor++; // valor = valor + 1
         valor--; // valor = valor - 1
         valor += 10; // valor = valor + 10
 
-
         // Operadores relacionais (>, <, >=, <=, ==, !=)
-        boolean teste1 = 10 > 5; //true
-        boolean teste2 = 5 > 1; //false
+        boolean teste1 = 10 > 5; // true
+        boolean teste2 = 5 < 1; // false
         boolean teste3 = 5 == 5; // true
         boolean teste4 = 4 != 5; // true
         boolean teste5 = 5 >= 5; // true
@@ -47,15 +49,12 @@ public class EstudoOperadores {
         boolean teste10 = (10 >= 0) || (1 < 5); // true
         boolean teste11 = !teste1; // false
 
-        // Exercicio
-        // Crie duas váriaveis: peso e altura.
-        // Calcule o IMC = peso e altura.
+        // Exercício I
+        // Crie duas variáveis: peso e altura.
+        // Calcule o IMC = peso / (altura * altura)
         // Mostre na tela o IMC.
-
-        double peso = 87.5;
-        double altura = 1.67;
-        double imc = peso / Math.pow(altura,2);
+        double peso = 87.5, altura = 1.67;
+        double imc = peso / Math.pow(altura, 2);
         System.out.println("Seu IMC é: " + imc);
-
     }
 }

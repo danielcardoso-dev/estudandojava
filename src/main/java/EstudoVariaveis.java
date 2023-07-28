@@ -1,8 +1,8 @@
 public class EstudoVariaveis {
-    // variável = container de dados
+    // variável = conteiner de dados
     // tipagem forte = definir o tipo de cada variável
     public static void main(String[] args) {
-        // para definir uma váriavel
+        // para definir uma variável
         // <tipo> <nome> = <valor>;
 
         // Tipos primitivos (surgiram com a linguagem): int, long, char, boolean, double, float
@@ -11,23 +11,21 @@ public class EstudoVariaveis {
         // Como declarar variáveis?
         int estoque = 150; // até 2 bilhões
         // L = sufixo para representar long
-        long populacaoTerra = 790000000L; // até na casa dos quintilhões
-        double salarioDev = 5500.99; // ate 15 casas de precisão
+        long populacaoTerra = 7900000000L; // até na casa dos quintilhões
+        double salarioDev = 5500.99; // até 15 casas de precisão
         // F = sufixo para representar float
         float nota = 7.5F; // até 7 casas de precisão
-        boolean ativo = false; // true, false
+        boolean ativo = true; // true, false
         String nome = "José Almir"; // usamos aspas duplas sempre
-        char letra = 'A'; // char = representa um único caractere e aspas simples
+        char letra = 'A'; // char = representa um único caractere
 
         // Tipagem forte
         int a = 1000;
-        a = 2000; // reatribbuição/atualização
+        a = 2000; // reatribuição/atualização
         // a = "batata"; // impossível atribuir outro tipo
 
-        System.out.println("estoque: " + estoque);
+        System.out.println("Estoque: " + estoque);
         System.out.println("População da terra: " + populacaoTerra);
         System.out.println(nome);
-
-
     }
 }

@@ -62,24 +62,29 @@ public class EstudoEstruturas {
         System.out.println(mensagem);
 
         // Repetição
-        // inicio
+        // início
         // condição de parada
         // atualização do valor
 
-        System.out.println("Digite quantos alimentos vocÊ come");
+        System.out.println("Digite quantos alimentos você come?");
         int total = entrada.nextInt();
 
         for (int i = 0; i < total; i++) {
-            System.out.println("Você gosta de bata!");
+            System.out.println("Você gosta de batata!");
         }
-        // Exercício: Criem uma versão com while do código
 
         int i = 0;
 
         while(i < total) {
             System.out.println("Você gosta de batata!");
+            i++;
+        }
+
+        int j = 0;
+
+        do {
+            System.out.println("Você gosta de batata!");
             j++;
         } while (j < total);
-
     }
 }
